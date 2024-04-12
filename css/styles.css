@@ -1,0 +1,321 @@
+/* PT Serif Font */
+.pt-serif-bold-italic {
+    font-family: "PT Serif",serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+/*Sen Font*/
+/*<uniquifier>: Use a unique and descriptive class name*/
+/* <weight>: Use a value from 400 to 800*/
+  
+.sen-regular {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  } 
+
+.sen-bold {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  } 
+
+.sen-bolditalics {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+  } 
+
+/*RESET STYLESHEET*/
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Setting a minimum height so that the header can grow*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  width: 100%;
+  background-color: #ECEDEE;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "PT Serif",serif;
+    font-weight: 700;
+    font-style:italic;
+    font-size: 2rem;
+    color: #A28A62;
+  }
+
+  /*label is for the hamburger menu icon only*/
+
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    bottom: 315px;
+    margin-right: 5%;
+    font-size: 3rem;
+    color: #002147;
+  }
+
+
+  /*displays none for #hamburger-check makes checkbox disappear */
+  #hamburger-check {
+    display: none;
+  }
+
+  /*Style the Navigation List*/
+/*Display none under header nav ul makes list disappear.*/
+ul{
+  font-family: Sen, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 75px;
+  background-color: #ECEDEE;
+  color: #A28A62;
+  display: none;
+  z-index: 999;
+}
+
+/*Format individual ul list items*/
+ul li {
+  list-style-type: none;
+  padding: 2% 0;
+  width: 100%;
+  text-align: center;
+}
+
+ul li a:hover {
+  background-color: #002147;
+  color: #A28A62;
+  text-decoration: underline;
+}
+
+ul li a{
+  color: #A28A62;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+/*This code says when checkmark is checked, I want you to find next sibling which is the ul and I want you to display it.*/
+#hamburger-check:checked ~ ul {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  list-style-type: none;
+}
+
+/*Main navigation.*/
+.main-nav {
+  font-family: Sen, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom:5%;
+  margin-bottom: 0%;
+}
+
+/*Sub-navigation*/
+/*Displays sub nav list when hover over link.*/
+.show-sub:hover .sub-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  width: 100%;
+  height: auto;
+  background-color: #ECEDEE;
+  list-style-type: none;
+}
+
+
+.sub-nav {
+  font-family: Sen, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom:5%;
+  margin-bottom: 0%;
+}
+
+/*Formatting the .sub-nav line items.*/
+.sub-nav li {
+  margin-top: -2%;
+  margin-bottom: 1%;
+  padding: 2%;
+}
+
+/*Center h1*/
+h1 {
+  text-align: center;
+  margin: 5% 5%;
+}
+
+/***********************************************ANIMATION OF DRP LOGO AROUND Computer Image Logo ********************/
+/*Format initial logo*/
+.drp {
+  font-family: "PT Serif",serif;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  border: 2px solid #002147;
+  color: #002147;
+  width: 100px;
+  height: 50px;
+  background-color:#ECEDEE;
+  position:relative;
+  animation-name: intro;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  margin-left: 5%;
+  
+}
+
+/*Animation commands*/
+@keyframes intro {
+  0% {background-color:#ECEDEE; color: #002147; left: 0px; top:0px;}
+  25% {background-color:#cac5e5; color: #9f86d1; left: 214px; top: 0px;}
+  50% {background-color: #A28A62; color: #002147; left: 214px; top: 146px;}
+  75% {background-color: #9f86d1; color:white;  left: 0px; top: 148px;}
+  100% {background-color: #ECEDEE; color: #002147; left: 0px; top: 0px;}
+}
+
+/*Format the nav image of commputer.*/
+nav img {
+  border: 2px solid #002147;
+  position: relative;
+  left: 100px; 
+  margin-left: 5%;
+}
+/***********************************************ANIMATION OF DRP LOGO AROUND Computer Image Logo ENDS ********************/
+
+
+
+ /*Original CSS Commands are set for mobile first screen width of 360px*/
+ div {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #002147;
+}
+
+h2 {
+  font-family: "Sen", sans-seriff;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size:1.25rem;
+  text-transform: uppercase;
+  color: #A28A62;
+  margin-left: 5%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+p { 
+  font-family: "Sen", sans-seriff;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  text-transform:none;
+  color: #ffffff;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+/*Format list of colleges/schools attended.*/
+.education ul { 
+    font-family: "Sen", sans-seriff;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    min-height: 75px;
+    list-style-type: disc;
+    text-transform:none;
+    color: #ffffff;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+
+/**************CSS Commands for Bootstrap5 Carousel from Tutorial Video by Adrian Tawrog*****************************/
+
+.carousel-item {
+  height: 32rem;
+  background: #777;
+  color: white;
+  position: relative;
+  }
+
+.container {
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding-bottom: 50px;
+  }
+
+.overlay image {
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  top:0;
+  background-position: center;
+  background-size:cover;
+  opacity: 0.5;
+  }
+
+
+/****************************CSS Commands for Bootstrap 5 Carousel Ends**********************************************/
+
+/*Google UX Design Certification Courses heading and other h3 headings.*/
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Sen", sans-seriff;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: #A28A62;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+/****************************Start of CSS Commands for Bootstrap 5 Accordions***************************************/
+/***Unable to change color or font of .accordion-header thru CSS or by changing name of class.*/
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************End of CSS Commands for Bootstrap 5 Accordions***************************************/
