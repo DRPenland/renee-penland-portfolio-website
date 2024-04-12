@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renee Penland's Portfolio</title>
+    <!--Link to Bootstrap code goes here-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Link to CSS Stylesheet-->
+    <link  rel="stylesheet " type="text/css" href="css/styles.css"/>
+    <!--Link for PT Serif and Sen font rule-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <script src="scripts/animations.js"></script>
+
+</head>
+<body>
+    <header>
+        <br/>
+        <br/>
+        <div>
+        <h1>Renee Penland's Portfolio</h1>
+        <nav>
+            <!--This is where logos go in header-->
+            <!--This is div for initials logo box-->
+            <div class="drp">DRP</div>
+            <!--This is the image logo.-->
+            <img src="images/logo.png" alt="Computer Logo" width="114" height="100"/>
+            <!--This is where hamburger icon and unordered list for navigation goes-->
+            <label for="hamburger-check">&#9776;</label>
+            <input type="checkbox" id="hamburger-check" name="hamburger-check">
+            <ul class="main-nav">
+                <li class="show-sub"><a href="#">ABOUT ME</a>
+                    <ul class="sub-nav">
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Volunteer Work</a></li>
+                    </ul>
+                </li>
+                <li class="show-sub"><a href="#">WORK</a>
+                    <ul class="sub-nav">
+                        <li><a href="#">Case Study 1</a></li>
+                        <li><a href="#">Case Study 2</a></li>
+                        <li><a href="#">Case Study 3</a></li>
+                        <li><a href="#">Illustrator Work</a></li>
+                        <li><a href="#">PhotoShop Work</a></li>
+                        <li><a href="#">Animation Work</a></li>
+                    </ul>
+                </li>
+                <li class="show-sub"><a href="#">CONTACT ME</a>
+                    <ul class="sub-nav">
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Social Media</a></li>
+                    </ul>
+                </li>
+            <!----Closing ul tag for main-nav-------------------------------------------->
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <!--unsure if put wrapper here so dark blue background on either side-->
+        <div>
+            <section>
+                <h2>ABOUT ME</h2>
+                <!--image of me goes here-->
+                <p class="summary">Renee Penland is an emerging Web Designer.   She recently graduated  from Brightpoint Community College with an AAS in Web Design. She is a member of the Phi Theta
+                    Kappa, the Honorary Society for Community College where she also serves as Secretary for the group.  Renee is focused on empowering people thru the dissemination of information.
+                    Helping people is the motivation behind her 14 years in customer service in the trucking industry, five years of teamwork in the Amazon e-commerce warehouse setting, and her
+                    educational background in Library Science.
+                    <br/><br/>
+                    Renee has a Bachelor of Arts degree from Randolph Macon College in Ashland, VA where she completed a Major in History, a minor in Classics, and a Women's Studies focus. Renee
+                    was a member of Phi Beta Kappa, the Honorary Society in college.  She spent two years working towards a master's degree in library and information science at the School of 
+                    Information and Library Science at the University of North Carolina in Chapel Hill. 
+                    <br/><br/>
+                    Now, Renee wants to expand her ability to help people by designing dynamic webpages for government, non-profits or businesses.  Renee is looking for an entry-level job where
+                    she can practice the skills she has learned.  She would like to work as part of a team that gives her an opportunity to grow.
+                    <br/><br/>
+                    Renee has passed the CIW User Interface Certification and plans to pass the CIW Advanced HTML and CSS3 Certification.  Renee enjoys coding in HTML and CSS3.  She also 
+                    has limited knowledge of JavaScript.  Renee has completed all 7 of the Google Courses that comprise the Google UX Design Certificate, giving her insight to the UX Design process.
+                    <br/><br/>
+                    Renee's greatest strengths are listening, empathizing, and writing.  She is passionate about accomplishing goals and meeting deadlines.
+                </p>
+                <h2>SKILLS</h2>
+                <p>Figma, Adobe PhotoShop, Adobe Illustrator, Adobe InDesign, Adobe Animate, HTML5, CSS3, Responsiveness</p>
+                <h2>EDUCATION</h2>
+                    <p>
+                        Brightpoint Community College, Midlothian, VA, AAS Web Design 2024 GPA 3.91</li>
+                        Google UX Design Certificate, 2024
+                        School of Information and Library Science, University of North Carolina at Chapel Hill, NC
+                        Two years of study towards Library Science degree.
+                        Randolph-Macon College, Ashland, VA  B.A. History with Honors, 1990 GPA 3.65 Class Rank 14/208
+                        Meadowbrook High School, Chesterfield, VA Disploma, 1986
+
+                    </p>
+                    <ul class="education">
+                        <li>Brightpoint Community College, Midlothian, VA, AAS Web Design 2024 GPA 3.91</li>
+                        <li>Google UX Design Certificate, 2024</li>
+                        <li>School of Information and Library Science, University of North Carolina at Chapel Hill, NC
+                        Two years of study towards Library Science degree.</li>
+                        <li>Randolph-Macon College, Ashland, VA  B.A. History with Honors, 1990 GPA 3.65 Class Rank 14/208</li>
+                        <li>Meadowbrook High School, Chesterfield, VA Disploma, 1986</li>
+                    </ul>
+                <h2>CERTIFICATIONS</h2><!--Scroll indicator code goes here-->
+            </section>
+        </div>
+        <!--This is where Bootstrap code for carousel goes for certificates-->
+        
+        
+        /*HTML code for carousel starts here. Code from youtube video "Carousel Slider Bootstrap 5 Slider Carousel Tutorial with Adrian Twarog.*/
+    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000">
+                <div class="overlay-image" style="background-image: url('images/CIWSiteDeveloperAssociateCertificate.png');">
+                    <div class="container">
+                        <h3>CIW Site Developer Associate Certificate</h3>
+                        <p>Focuses on webpage development and beginning HTML5 and CSS3.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="1000">
+                <div class="overlay-image" style="background-image: url('images/GoogleCourseraUXDesignCertificate.png');"></div>
+                    <div class="container">
+                            <h3>Google UX Design Certificate</h3>
+                            <p>This course encompasses 7 Google Courses focusing on website design.</p>
+                    </div>
+            </div>
+            <div class="carousel-item" data-interval="500">
+                <div class="overlay-image" style="background-image: url('');"></div>
+                    <div class="container">
+                        <h3>Example headline</h3>
+                        <p>Random text here</p>
+                    </div>
+            </div>
+        </div>
+        <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+            <span class="sr-only">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+            <span class="sr-only">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+    /***************END OF BOOTSTRAP CODE FOR CAROUSEL.*********************************************************************************************/
+        <section>
+        <h3>Google UX Design Certification Courses</h3>
+            <!--This is where Google UX Design Certificates go in bootstrap accordion code. Unsure how to do individual headers for certificates -->
+            <!--Scroll indicator code goes here-->
+            <!-------------------Start of Bootstrap 5 accordion code from https://getbootstrap.com/docs/5.3/components/accordion/. -->
+            <!-------Information about certificates, hours, etc. from https://grow.google/certificates/en_us/certificates/ux-design/?utm_source=bing&utm_medium=paidsearch&utm_campaign=gcc_b_c&utm_content=bk_phr_ux&utm_term=google%20ux%20design%20program&msclkid=e2876c25fce8139355540a3c93d22fe1-------------------------------------------------->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Course 1 Foundations of User Experience (UX Design) - 19 hours<br/>
+                    Completed Nov 4, 2022</button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><img src="images/Course1FoundationsofUXDesign.png" alt=Google Course 1 Certificate Foundations of UX Design" width="400" height="450">Overview of User Experience (UX) Design field that includes jobs within the field, and research methods designers use.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Course 2 Start the UX Design Process: Empathize, Define, and Ideate - 21 hours<br/>
+                    Completed Feb 8, 2023</button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><img src="images/Course2StarttheUXDesignProcess.png" alt=Google Course 2 Start the UX Design Process: Empathize, Define, and Ideate" width="400" height="450">Utilize design thinking framework to empathize user's needs, understand their problems and develop solutions. Students start working on their first mobile app design.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Course 3 Build Wireframes and Low-Fidelity Prototypes - 17 hours<br/>
+                    Completed Feb 26, 2023</button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><img src="images/Course3BuildWireframesandLowFidelityPrototypes.png" alt=Google Course 3 Build Wireframes and Low-Fidelity Prototypes" width="400" height="450">Continue working on moible app from course 2.  Create storyboards, paper and digital wireframes and low-fidelity prototype in Figma for your app.  </div>
+                  </div>
+                </div>
+                <!-----------Merged 2 accordion codes and created 7th accordion to code to display all 7 Google Certifications.---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Course 4 Conduct UX Research and Test Early Concepts - 20 hours<br/>
+                      Completed Apr 2, 2023</button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><img src="images/Course4CoductUXResearchandTestEarlyConcepts.png" alt=Google Course 4 Conduct UX Research and Test Early Concepts" width="400" height="450">Create and implement a usability study for student's mobile app design.  Interview participants and process feedback on the design and implement changes to low-fidelity design based on interview feedback.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Course 5 Create High-Fidelity Designs and Prototypes in Figma - 29 hours<br/>
+                      Completed Apr 25, 2023</button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><img src="images/Course5CreateHighFidelityDesignsandPrototypesinFigma.png" alt=Google Course 5 Create High-Fidelity Designs and Prototypes in Figma" width="400" height="450">Create high fidelity interactive prototypes of mobile app design. Conduct research to improve the design and learned how to share designs with team members.  </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Course 6 Build Dynamic User Interface (UI) for Websites - 22 hours,<br/>
+                      Completed Mar 15, 2024</button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><img src="images/Course6BuildDynamicUserInterfacesforWebsites.png" alt=Google Course 6 Build Dynamic User Interfaces (UI) for Websites" width="400" height="450">Students create a second website that is responive using Figma for portfolio. Receive feedback on design.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Course 7 Design a User Experience for Social Good & Prepare for Jobs - 24 hours,<br>
+                      Completed Mar 23, 2024</button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><img src="images/Course7DesignaUserExperienceforSocialGood&PrepareforJobs.png" alt=Google Course 7 Design a User Experience for Social Good & Prepare for Jobs" width="400" height="450">Includes a third moible app and responsive website for student's portfolio.  Prepare students for job search in UX Design field.</div>
+                      </div>
+                    </div>
+              </div>
+              <!--End of the Bootstrap 5 accordion code-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            </section>
+
+        <div>
+            <section>
+                <h2>VOLUNTEER WORK</h2>
+                
+                    <ul>
+                        
+                    </ul>
+                
+            </section>
+        </div>
+        <div>
+            <section>
+                <h2>WORK</h2><!--Scroll indicator code goes here-->
+                <!--This is where Bootstrap code for cards goes.-->
+                <h3>Case Study 1</h3>
+                <!--bootstrap code for card 1 goes-->
+                <h3>Case Study 2</h3><!--Scroll indicator code goes here-->
+                <!--bootstrap code for card 2 goes-->
+                <h3>Case Study 3</h3>
+                <!--bootstrap code for card 3 goes-->
+                <h3>Illustrator Work</h3><!--Scroll indicator code goes here-->
+                <!--bootstrap code for card 4 goes-->
+                <h3>PhotoShop Work</h3>
+                <!--bootstrap code for card 5 goes-->
+                <h3>Animation Work</h3><!--Scroll indicator code goes here-->
+                <!--bootstrap code for card 6 goes-->
+            </section>
+        </div>
+        <div>
+            <section>
+                <h2>CONTACT ME</h2>
+                <p>Contact me paragraph</p>
+                <button>RESUME</button>
+            </section>
+            <section>
+                <button>BACK TO TOP</button>
+            </section>
+        </div>
+        <div>
+            <footer>
+                <!--icons to social media with links to profiles goes here-->
+                <p>Copyright icon and year 2024</p>
+            </footer>
+        </div>
+    </main>
+    <!--Script tag for JavaScript code from Bootstrap.-->
+   <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
