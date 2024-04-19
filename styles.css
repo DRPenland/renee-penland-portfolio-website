@@ -1,0 +1,664 @@
+/* PT Serif Font */
+.pt-serif-bold-italic {
+    font-family: "PT Serif",serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+/*Sen Font*/
+/*<uniquifier>: Use a unique and descriptive class name*/
+/* <weight>: Use a value from 400 to 800*/
+  
+.sen-regular {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  } 
+
+.sen-bold {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  } 
+
+.sen-bolditalics {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+  } 
+
+/*RESET STYLESHEET*/
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Setting a minimum height so that the header can grow*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  width: 100%;
+  background-color: #ECEDEE;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "PT Serif",serif;
+    font-weight: 700;
+    font-style:italic;
+    font-size: 2rem;
+    color: #A28A62;
+  }
+
+  /*label is for the hamburger menu icon only*/
+
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    bottom: 315px;
+    margin-right: 5%;
+    font-size: 3rem;
+    color: #002147;
+  }
+
+
+  /*displays none for #hamburger-check makes checkbox disappear */
+  #hamburger-check {
+    display: none;
+  }
+
+  /*Style the Navigation List*/
+/*Display none under header nav ul makes list disappear.*/
+ul{
+  font-family: Sen, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 75px;
+  background-color: #ECEDEE;
+  color: #A28A62;
+  display: none;
+  z-index: 999;
+}
+
+/*Format individual ul list items*/
+ul li {
+  list-style-type: none;
+  padding: 2% 0;
+  width: 100%;
+  text-align: center;
+}
+
+ul li a:hover {
+  background-color: #002147;
+  color: #A28A62;
+  text-decoration: underline;
+}
+
+ul li a{
+  color: #A28A62;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+/*This code says when checkmark is checked, I want you to find next sibling which is the ul and I want you to display it.*/
+#hamburger-check:checked ~ ul {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  list-style-type: none;
+}
+
+/*Main navigation.*/
+.main-nav {
+  font-family: Sen, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom:5%;
+  margin-bottom: 0%;
+}
+
+/*Sub-navigation*/
+/*Displays sub nav list when hover over link.*/
+.show-sub:hover .sub-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  width: 100%;
+  height: auto;
+  background-color: #ECEDEE;
+  list-style-type: none;
+}
+
+
+.sub-nav {
+  font-family: Sen, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom:5%;
+  margin-bottom: 0%;
+}
+
+/*Formatting the .sub-nav line items.*/
+.sub-nav li {
+  margin-top: -2%;
+  margin-bottom: 1%;
+  padding: 2%;
+}
+
+/*Center h1*/
+h1 {
+  text-align: center;
+  margin: 5% 5%;
+}
+
+/***********************************************ANIMATION OF DRP LOGO AROUND Computer Image Logo ********************/
+/*Format initial logo*/
+.drp {
+  font-family: "PT Serif",serif;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  border: 2px solid #002147;
+  color: #002147;
+  width: 100px;
+  height: 50px;
+  background-color:#ECEDEE;
+  position:relative;
+  animation-name: intro;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  margin-left: 5%;
+  
+}
+
+/*Animation commands*/
+@keyframes intro {
+  0% {background-color:#ECEDEE; color: #002147; left: 0px; top:0px;}
+  25% {background-color:#cac5e5; color: #9f86d1; left: 214px; top: 0px;}
+  50% {background-color: #A28A62; color: #002147; left: 214px; top: 146px;}
+  75% {background-color: #9f86d1; color:white;  left: 0px; top: 148px;}
+  100% {background-color: #ECEDEE; color: #002147; left: 0px; top: 0px;}
+}
+
+/*Format the nav image of commputer.*/
+nav img {
+  border: 2px solid #002147;
+  position: relative;
+  left: 100px; 
+  margin-left: 5%;
+}
+/***********************************************ANIMATION OF DRP LOGO AROUND Computer Image Logo ENDS ********************/
+
+
+
+ /*Original CSS Commands are set for mobile first screen width of 360px*/
+ div {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #002147;
+  min-height: 200px;
+}
+
+h2 {
+  font-family: "Sen", sans-seriff;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size:1.25rem;
+  text-transform: uppercase;
+  color: #A28A62;
+  margin-left: 5%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-top: 5%;
+}
+
+/*Position About Me heading.  Put top margin in.*/
+.about {
+  margin-top: 5%;
+}
+
+/*Format the picture of Renee Penland in the About Me section. Cause text to wrap around the picture.*/
+/*Adjusted code from https://stackoverflow.com/questions/19179424/how-to-wrap-text-around-an-image-using-html-css for oval and span code to wrap text around pic.*/
+.oval {
+  width: 400px;
+  height: 250px;
+  color: #111;
+  text-align: center;
+  font-size: 90px;
+  float: left;
+  shape-outside: border-box ();
+  padding: 10px;
+  background-clip: content-box;
+  margin-right: -80px;
+}
+
+/*Command having text wrap around the pic of Renee.*/
+span {
+  padding-top: 70px;
+  display: inline-block;
+}
+
+/*Format the picture of Renee Penland in About Me section. Make top of pic even with beginning of paragraph.*/
+.oval img {
+  position: relative;
+  bottom: 80px;
+  left: -8%;
+  border: 4px solid #A28A62;
+  margin-top: 3%;
+  margin-bottom: 8%;
+}
+
+/*Push paragraph around oval img up to match start of paragraph with start of picture.*/
+.oval p {
+  margin-top: 5%;
+}
+
+
+p { 
+  font-family: "Sen", sans-seriff;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  text-transform:none;
+  color: #ffffff;
+  margin-right: 5%;
+  margin-left: 5%;
+  position: relative;
+  top: 30px;
+}
+
+/*Format the skills h2. Put top margin in.*/
+.skills {
+  margin-top: 5%;
+  position: relative;
+  top: 15px;
+}
+
+/*Format the education h2 header. Put in top margin.*/
+.edu {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  position: relative;
+  top: 20px;
+}
+/*Format list of colleges/schools attended on education ul.*/
+.education { 
+    display: block;
+    font-family: "Sen", sans-seriff;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    min-height: 75px;
+    text-transform:none;
+    background-color: #002147;
+    color: #ffffff;
+    padding-top: 3%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+/*Format the line items of education ul so the bullet image will appear and reduce line height between lines.*/
+  .education li {
+    list-style-type: disc;
+    color: #ffffff;
+    text-align: left;
+    margin-top: -2%;
+    margin-bottom: -2%;
+  }
+
+?*****************************CSS Commands for Bootstrap 5 carousel from website. *******************************/
+
+
+
+
+
+
+
+
+
+/******************end of code for Boostrap 5 carousel from website.*********************************/
+/*Google is div containing h3 which disappeared. Need this div to see h3.*/
+.google {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Google UX Design Certification Courses heading and other h3 headings.*/
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Sen", sans-seriff;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: #A28A62;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  text-align: center;
+}
+
+/****************************Start of CSS Commands for Bootstrap 5 Accordions***************************************/
+/***Unable to change color or font of .accordion-header thru CSS or by changing name of class.*/
+
+/*Overwrite formatting by Bootstrap for accordion-headings.*/
+.accordion-h2 {
+  font-family: "PT Serif",serif; 
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+/****************************End of CSS Commands for Bootstrap 5 Accordions***************************************/
+
+
+/*Format Volunteer Work ul list. Necessary to differentiate from nav ul.*/
+.volunteer {
+  display: block;
+  font-family: "Sen", sans-seriff;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  min-height: 75px;
+  text-transform:none;
+  background-color: #002147;
+  color: #ffffff;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+/*Format the sub volunteer menu.*/
+.sub-volunteer {
+  display: block;
+  font-family: "Sen", sans-seriff;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  min-height: 75px;
+  text-transform:none;
+  background-color: #002147;
+  color: #ffffff;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+/*Format the line items of volunteer ul so the bullet image will appear and reduce line height between lines.*/
+.volunteer li {
+  list-style-type: disc;
+  color: #ffffff;
+  text-align: left;
+  margin-top: -2%;
+  margin-bottom: -2%;
+}
+
+/*Format the line items of sub-volunteer ul so the bullet image will appear and reduce line height between lines.*/
+.sub-volunteer li {
+    list-style-type: disc;
+    color: #ffffff;
+    text-align: left;
+    margin-top: -2%;
+    margin-bottom: -2%;
+  }
+
+
+/*********Coding for cards under Work section start here.**************************/
+.card  {
+  border: 2px solid #A28A62;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*Color background-color of case study 1 to group cards in that section.*/
+.first {
+  background-color: #cac5e5;
+ 
+}
+
+/************************code for contact me section.*********************************************/
+
+/*Create light gray div for Contact Me information.*/
+.contact {
+  display: flex; 
+  flex-direction: column;
+  background-color: #ecedee;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  min-height: 100px;
+}
+
+/*Format the paragraph text in .contact.*/
+.contact p {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+.contact a {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  color: #A28A62;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+/*Format hover for email address.*/
+.contact a:hover {
+  color: #2E54B1;
+}
+
+/*Format resume button.*/
+.resume {
+  position: relative; 
+  left: 180px;
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  background-color: #A28A62;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 2%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+/*Format the Back to Top button.*/
+.backtop button {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  background-color: #A28A62;
+  border: 1px solid #000000;
+  color: #000000;
+  text-decoration: none;
+  padding: 2%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+/*Format the link for the backtop button.*/
+.backtop a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*Format footer.*/
+footer {
+  background-color: #ecedee;
+  margin-bottom: -80%;
+  min-height: 75px;
+}
+
+
+/*Format socialmediaicons ul so it will display.  Nav ul show none is interferring.*/
+.socialmediaicons {
+  display: block;
+  font-size: 2em;
+  height: 300px;
+}
+
+/*Position the github icon to flex-start.*/
+.fa-github {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ margin-left: 15%;
+ margin-top: 5%;
+}
+
+
+/*Position the linked in icon to flex-end.*/
+.fa-linkedin {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 5%;
+  margin-right: 20%;
+  position: relative;
+  bottom: 60px;
+}
+
+
+/*To avoide layout shift (delay in loading) with Iconify.*/
+iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+/*CSS for codecademy icon by Iconify.*//*Position the codecademy icon.*/
+.logos--codecademy {
+  display: inline-block;
+  width: 128px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 108'%3E%3Cg fill='black'%3E%3Cpath d='M20.948 74.177c-.922-2.796-1.38-6.326-1.38-11.072c0-4.748.458-8.286 1.38-11.075c2.575-8.003 9.399-12.376 18.333-12.376c6.635 0 11.889 2.7 15.394 6.98c.27.37.362.928-.093 1.3l-5.803 5.119c-.463.375-.922.281-1.293-.183c-2.214-2.512-4.517-3.91-8.203-3.91c-3.96 0-6.999 1.955-8.292 5.863c-.732 2.239-.92 4.841-.92 8.283c0 3.443.186 6.14.92 8.375c1.291 3.812 4.332 5.767 8.292 5.767c3.686 0 5.99-1.397 8.203-3.903c.371-.472.83-.472 1.293-.099l5.803 5.12c.455.37.364.837.093 1.304c-3.503 4.19-8.757 6.886-15.394 6.886c-8.934-.004-15.758-4.38-18.333-12.379m201.326 0c-.922-2.796-1.38-6.326-1.38-11.072c0-4.748.458-8.286 1.38-11.075c2.581-8.003 9.397-12.376 18.332-12.376c6.637 0 11.892 2.7 15.392 6.98c.274.37.37.928-.095 1.3l-5.805 5.119c-.46.375-.918.281-1.288-.183c-2.21-2.512-4.515-3.91-8.204-3.91c-3.959 0-7.001 1.955-8.289 5.863c-.739 2.239-.918 4.841-.918 8.283c0 3.443.18 6.14.918 8.375c1.288 3.812 4.33 5.767 8.289 5.767c3.69 0 5.994-1.397 8.204-3.903c.37-.472.829-.472 1.288-.099l5.805 5.12c.464.37.37.837.095 1.304c-3.5 4.19-8.755 6.886-15.392 6.886c-8.935-.004-15.75-4.38-18.332-12.379m232.69 11.354c-.553 0-.92-.37-.92-.932V58.732c0-5.77-2.86-9.774-8.39-9.774c-5.343 0-8.475 4.001-8.475 9.774v25.867c0 .561-.371.932-.92.932h-8.481c-.552 0-.924-.37-.924-.932V58.732c0-5.77-2.855-9.774-8.376-9.774c-5.347 0-8.483 4.001-8.483 9.774v25.867c0 .561-.368.932-.922.932h-8.477c-.556 0-.92-.37-.92-.932V41.607c0-.56.364-.933.92-.933h8.477c.554 0 .922.373.922.933v3.257h.093c1.938-2.792 5.805-5.21 11.7-5.21c5.255 0 9.493 2.136 12.16 5.953h.095c3.408-3.718 7.834-5.953 14.192-5.953c10.316 0 16.126 7.07 16.126 16.656v28.287c0 .563-.372.934-.926.934zm22.199 16.749c-.551 0-.919-.374-.919-.935v-7.442c0-.556.368-.935.919-.935h1.66c3.5 0 5.256-1.575 6.635-5.3l1.292-3.815l-16.219-42.248c-.186-.56.185-.933.74-.933h9.12c.553 0 .922.374 1.102.933l10.048 29.313h.181l9.586-29.313c.184-.56.554-.933 1.101-.933h8.752c.557 0 .927.374.739.933L494.949 88.32c-3.867 10.61-7.559 13.957-14.927 13.957zM63.152 74.18c-1.013-3.169-1.474-6.144-1.474-11.075c0-4.924.46-7.903 1.474-11.06c2.488-7.817 9.3-12.379 18.328-12.379c8.933 0 15.749 4.56 18.237 12.379c1.008 3.157 1.472 6.136 1.472 11.06c0 4.93-.464 7.906-1.472 11.076c-2.49 7.811-9.304 12.37-18.237 12.37c-9.028.001-15.84-4.557-18.328-12.37m26.617-2.791c.739-2.323.922-4.467.922-8.284c0-3.806-.183-5.856-.922-8.272c-1.288-3.719-4.145-5.864-8.289-5.864c-4.142 0-7.094 2.145-8.38 5.864c-.734 2.418-.92 4.466-.92 8.272c0 3.817.186 5.96.92 8.284c1.286 3.725 4.24 5.858 8.38 5.858c4.144-.002 7.001-2.134 8.289-5.858m190.919-31.736c-7.28 0-12.161 1.766-15.758 4.373c-.364.283-.459.742-.179 1.207l3.4 6.145c.286.466.831.56 1.296.187c2.12-1.672 5.157-3.073 10.136-3.073c7.26 0 9.724 2.203 9.85 7.044h.001v.06c.004.112.004.227.004.347v14.518c0 5.118-3.5 7.626-9.855 7.626c-4.98 0-7.648-1.857-7.648-5.577c0-4.19 2.95-6.056 9.582-6.056l2.016.004c.552 0 .924-.373.924-.927v-5.966c0-.556-.372-.928-.924-.928h-.443l-3.23-.002c-10.964 0-17.789 4.474-17.789 14.239c0 9.4 6.825 13.679 14.93 13.679c6.26 0 10.408-2.138 12.528-5.21h.09v3.258c0 .56.373.933.924.933h7.738c.554 0 .924-.371.924-.933V55.29c.001-10.979-4.973-15.635-18.517-15.635M170.606 58.633c-.24 0-.398.16-.398.4v7.017c0 .24.158.402.398.402h22.816c.646 0 1.015-.37 1.015-.924c0-7.265-.464-10.337-1.474-13.498c-2.491-7.63-9.123-12.375-18.246-12.375c-8.844 0-15.66 4.558-18.152 12.375c-.917 2.885-1.474 6.422-1.474 11.075s.645 8.093 1.573 10.98c2.486 7.814 9.117 12.467 18.514 12.467c8.198 0 14.468-3.164 18.242-7.63c.366-.463.366-.928-.093-1.304l-5.431-4.838c-.465-.371-.924-.275-1.387.186c-2.208 2.422-5.433 4.282-10.409 4.282c-4.97 0-8.475-2.418-9.95-6.79a10.948 10.948 0 0 1-.523-1.95h-.002c-.335-1.895-.533-3.739-.533-6.447c.072-2.553.22-4.183.581-6.255c.004-.029.01-.054.015-.08l.01-.06v.002c.088-.488.209-.947.358-1.405c1.198-3.628 4.514-5.768 8.756-5.768c4.147 0 7.459 2.14 8.657 5.768c.371 1.123.552 2.234.552 3.82c0 .37-.183.553-.552.553h-12.106l.002-.001zM146.53 22.256h-8.462c-.558 0-.925.372-.925.924v42.396h-.047c-.099 2.565-.377 4.251-.87 5.832c-1.196 3.713-4.054 5.756-8.282 5.756c-4.14 0-6.99-2.043-8.191-5.756c-.643-2.047-.915-4.275-.915-8.363c0-4.086.272-6.319.915-8.358c1.178-3.643 3.937-5.7 7.94-5.781h3.613c.176-.043.29-.182.29-.382l.047-8.495a.369.369 0 0 0-.337-.388l-2.884-.01h-3.39v.001c-7.418.079-12.847 3.695-15.121 10.771c-1.105 3.442-1.565 6.607-1.565 12.642c0 6.038.46 9.199 1.565 12.634c2.299 7.156 7.82 10.78 15.363 10.78c5.983 0 9.664-2.226 11.775-5.297h.09v3.345c0 .56.37.931.926.931h8.462c.553 0 .922-.37.922-.93V23.18c.004-.554-.366-.924-.918-.924m221.855 36.377c-.236 0-.398.16-.398.4v7.017c0 .24.162.402.398.402h22.822c.644 0 1.013-.37 1.013-.924c0-7.265-.463-10.337-1.472-13.498c-2.492-7.63-9.125-12.375-18.244-12.375c-8.847 0-15.663 4.558-18.154 12.375c-.919 2.885-1.475 6.422-1.475 11.075s.646 8.093 1.573 10.98c2.484 7.814 9.118 12.467 18.515 12.467c8.197 0 14.468-3.164 18.244-7.63c.366-.463.366-.928-.095-1.304l-5.432-4.838c-.462-.371-.922-.275-1.384.186c-2.208 2.422-5.432 4.282-10.411 4.282c-4.97 0-8.474-2.418-9.95-6.79a10.796 10.796 0 0 1-.52-1.95h-.002c-.337-1.895-.534-3.739-.534-6.447c.068-2.553.215-4.183.579-6.255a.696.696 0 0 0 .014-.08c.004-.022.008-.038.011-.06v.002a11.1 11.1 0 0 1 .359-1.405c1.196-3.628 4.515-5.768 8.757-5.768c4.147 0 7.458 2.14 8.656 5.768c.37 1.123.555 2.234.555 3.82c0 .37-.185.553-.555.553H369.15v-.001zm-32.114-36.377c-.555 0-.924.373-.924.926V65.64c-.145 2.57-.425 4.257-.918 5.84c-1.199 3.72-4.061 5.768-8.293 5.768c-4.143 0-6.999-2.048-8.202-5.769c-.64-2.05-.92-4.28-.92-8.374c0-4.092.276-6.33.92-8.372c1.178-3.648 3.942-5.69 7.953-5.77l3.618.002c.554 0 .924-.372.924-.926v-7.456c0-.556-.37-.928-.924-.928h-.443l-5.47-.001h-.371c-7.426.079-12.864 3.702-15.14 10.789c-1.107 3.447-1.566 6.613-1.566 12.658c0 6.047.459 9.214 1.566 12.655c2.301 7.164 7.833 10.794 15.386 10.794c5.991 0 9.677-2.228 11.794-5.304l.09 3.35c0 .562.369.932.925.932h8.477c.553 0 .924-.368.924-.933V23.182c-.007-.554-.377-.926-.927-.926zm-114.69 75.962v8.48c0 .557.37.927.923.927h31.42c.56 0 .932-.372.932-.928v-8.479c0-.55-.371-.922-.933-.922h-31.419c-.554 0-.923.372-.923.922'/%3E%3Cpath d='M213.605.3c-.014-.015-.023-.033-.036-.045l-.003-.002a.924.924 0 0 0-.664-.253H1.116c-.07 0-.136.007-.2.018L.862.032C.82.043.776.052.738.068a.056.056 0 0 0-.018.01C.392.211.19.517.19.923v105.768c0 .323.126.576.338.737c.016.016.03.03.052.041v.002a.984.984 0 0 0 .536.144H212.9c.312 0 .565-.12.725-.327a.93.93 0 0 0 .199-.599V.924a.93.93 0 0 0-.219-.624M11.43 97.293c-.066 0-.13-.006-.188-.015c-.018-.003-.038-.012-.056-.017c-.043-.01-.086-.018-.125-.035c-.007-.001-.011-.007-.018-.009c-.327-.132-.526-.437-.528-.839V11.247c0-.408.201-.71.528-.847c.009-.002.014-.007.02-.009c.037-.014.16-.045.179-.05c.06-.01.125-.015.192-.015h191.145a1.3 1.3 0 0 1 .192.015c.02.005.038.012.054.018a.719.719 0 0 1 .125.034c.01.002.013.007.02.009c.328.134.527.44.527.846V96.38c-.001.403-.202.708-.525.841c-.007.002-.01.007-.02.009a.896.896 0 0 1-.124.034c-.02.005-.035.014-.055.018c-.061.01-.12.014-.187.014H11.43z'/%3E%3C/g%3E%3C/svg%3E");
+  margin-top: 5%;
+  margin-left: 5%;
+  position: relative;
+  bottom: 325px;
+  right: 115px;
+}
+
+/*Position the behance logo.*/
+.fa-square-behance {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  bottom: 145px;
+  right: 8px;
+}
+
+/*Position Dribble icon.*/
+.logos--dribbble {
+  display: inline-block;
+  width: 109.72px;
+  height: 27px;
+  color: #A28A62;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 126'%3E%3Cpath d='M156.434 50.322c5.86 0 10.61-4.752 10.61-10.613c0-5.862-4.75-10.613-10.61-10.613c-5.86 0-10.61 4.751-10.61 10.613c0 5.861 4.75 10.613 10.61 10.613m350.16 36.261c-1.614-1.135-2.86-1.323-3.894.881c-17.82 38.596-47.85 19.336-44.867 21.031c6.661-3.047 24.18-17.097 21.532-36.497c-1.608-11.856-11.784-17.115-22.585-15.232c-18.854 3.287-25.79 23.623-22.259 41.627c.618 3.092 1.722 5.642 2.825 8.14c-21.306 17.326-29.767-15.51-30.727-19.434c-.038-.21 16.451-13.954 21.037-46.705c4.807-34.325-6.143-40.575-17.34-40.38c-20.72.361-26.319 43.652-18.797 79.732c-.63.164-3.562 1.788-8.273 1.97c-3.39-10.667-17.875-20.017-21.666-16.414c-9.488 9.013 2.301 26.634 10.596 28.016c-4.983 30.691-36.146 23.09-30.345-15.361c10.148-18.845 17.866-46.866 16.489-63.782C357.832 8.186 353.404.162 343.39.56c-19.261.762-21.355 44.065-19.097 74.799c-.112-.757-1.184 3.734-9.077 5.967c-1.867-10.363-18.553-20.765-22.481-15.764c-7.353 9.36 5.39 26.049 11.426 27.213c-4.983 30.69-36.145 23.089-30.344-15.362c10.148-18.844 17.865-46.865 16.488-63.781c-.488-5.99-4.915-14.014-14.93-13.617c-19.261.763-21.355 44.066-19.097 74.8c-.113-.769-1.21 3.87-9.425 6.066c-.275-13.445-17.022-19.61-21.045-15.32c-7.17 7.647 1.642 23.337 9.794 27.214c-4.983 30.69-36.145 23.089-30.344-15.362c10.148-18.844 17.866-46.865 16.488-63.781c-.487-5.99-4.915-14.014-14.93-13.617c-19.26.763-20.81 46.243-18.552 76.976c-6.344 27.181-27.619 61.125-24.855-6.872c.273-4.77.571-6.581-1.807-8.367c-1.782-1.388-5.834-.72-8.049-.665c-2.692.108-3.367 1.683-3.962 4.064c-1.386 6.148-1.635 12.108-1.833 20.24c-.13 3.804-.435 5.579-1.9 10.766c-1.463 5.186-9.81 14.665-14.38 13.08c-6.34-2.18-4.26-20.078-3.072-32.375c.99-9.718-2.18-14.082-10.302-15.669c-4.755-.991-7.644-.839-12.596-2.4c-4.683-1.476-5.742-10.334-15.73-7.382c-5.463 1.616-1.951 13.191-3.264 21.77c-6.455 42.201-19.886 43.36-26.117 22.86C88.46 27.31 68.515.214 56.84.214c-12.16 0-26.06 8.376-20.174 61.968c-2.862-.835-3.742-1.285-6.875-1.285C12.072 60.897 0 75.221 0 92.891s12.073 31.995 29.792 31.995c10.46 0 17.804-4.757 23.366-12.116c3.629 5.197 8.048 12.196 16.129 11.881c24.087-.938 31.092-50.347 31.919-53.103c2.575.397 5.011 1.148 7.389 1.545c3.962.595 4.25 2.163 4.16 6.148c-1.05 33.604 5.151 45.37 19.217 45.37c7.837 0 14.822-7.7 19.634-13.206c3.594 7.418 9.321 12.979 17.004 13.205c18.617.463 25.745-29.21 25.095-25.305c-.51 3.064 6.04 25.138 25.206 25.218c23.741.1 28.154-26.008 28.68-30.381c.066-.87.095-.78 0 0l-.018.265c7.537-1.402 11.426-5.443 11.426-5.443s6.052 35.965 28.47 35.56c23.28-.422 27.67-24.022 28.246-28.624c.076-1.092.121-.964 0 0a20.34 20.34 0 0 0-.009.135c8.953-3.257 11.308-6.526 11.308-6.526s4.81 35.25 28.47 35.558c21.084.276 28.898-21.315 28.944-30.352c3.556.038 10.134-2.11 9.98-2.232c0 0 7.723 30.82 29.29 32.403c10.126.743 17.722-5.698 22.052-8.636c10.176 8.241 44.061 18.767 65.457-17.508c3.02-5.206-3.473-11.356-4.613-12.159M28.937 112.92c-10.338 0-16.967-9.559-16.967-19.866c0-10.306 6.085-19.865 16.423-19.865c4.652 0 7.24.512 10.863 3.663c.657 2.589 2.519 8.561 3.425 11.273c1.214 3.629 2.658 6.718 4.114 10.08c-2.08 8.623-8.899 14.715-17.858 14.715m25.192-35.765c-.43-.685-.34-.264-.821-.911c-1.895-5.155-5.547-16.661-5.97-29.73c-.478-14.784 1.986-32.113 9.25-32.113c4.922 0 10.153 35.12-2.46 62.754M199.69 61.751c-1.166-8.773-1.227-47.883 8.162-46.806c5.184 2.1-3.287 39.005-8.162 46.806m68.559 0c-1.166-8.773-1.227-47.883 8.162-46.806c5.184 2.1-3.287 39.005-8.162 46.806m68.015.545c-1.167-8.774-1.227-47.884 8.161-46.807c5.184 2.1-3.287 39.006-8.161 46.807m75.088-49.64c8.584-.89 8.23 36.596-9 60.262c-2.222-8.554-5.629-57.325 9-60.263m36.08 80.662c-2.757-13.927 4.367-23.074 11.711-24.077c2.567-.41 6.287 1.253 7.029 4.362c1.22 5.859-.177 14.55-16.614 25.577c.024.094-1.511-2.76-2.125-5.862'/%3E%3C/svg%3E");
+  position: relative;
+  bottom: 215px;
+  left: 90px;
+  margin-right: 5%;
+}
+
+/*CSS for freecodecamp icon by Iconify.*/
+.simple-icons--freecodecamp {
+  display: block;
+  width: 27px;
+  height: 27px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M19.885 3.906a.62.62 0 0 0-.354.12c-.08.08-.161.196-.161.313c0 .2.236.474.673.923c1.822 1.754 2.738 3.903 2.732 6.494c-.007 2.867-.97 5.17-2.844 6.954c-.394.353-.556.63-.557.867c0 .116.08.237.16.353a.58.58 0 0 0 .353.162c.434 0 1.04-.512 1.833-1.509c1.542-1.89 2.24-3.978 2.279-6.824c.036-2.847-.857-4.777-2.603-6.77c-.63-.712-1.153-1.082-1.511-1.083m-15.769.002c-.358 0-.882.37-1.51 1.083C.858 6.984-.035 8.914.001 11.761c.04 2.846.737 4.933 2.28 6.824c.791.997 1.398 1.51 1.832 1.509a.57.57 0 0 0 .352-.162c.08-.116.16-.237.16-.353c0-.237-.162-.514-.556-.866c-1.873-1.785-2.837-4.087-2.844-6.955c-.006-2.591.91-4.74 2.732-6.494c.437-.449.674-.722.673-.923c0-.117-.08-.233-.161-.313a.62.62 0 0 0-.354-.12zm7.056.895s.655 2.081-2.649 6.727c-3.156 4.433 1.045 7.15 1.432 7.386c-.281-.18-2.001-1.5.402-5.423c.466-.77 1.076-1.47 1.834-3.041c0 0 .67.946.32 2.998c-.523 3.101 2.271 2.214 2.314 2.257c.976 1.15-.808 3.17-.917 3.233c-.108.061 5.096-3.13 1.399-7.935c-.253.253-.582 1.442-1.267 1.266c-.684-.174 2.125-3.494-2.868-7.468M9.955 18.916q.036.024.038.024z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  position: relative;
+  bottom: 345px;
+  left: 225px;
+}
+
+
+/*Position Medium icon.*/
+.fa-medium {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 5%;
+  position: relative;
+  bottom: 30px;
+  margin-left: 15%;
+}
+ 
+
+/*Position copyright icon.*/
+.fa-copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #000000;
+  position: relative;
+  bottom: 350px;
+  left: -20px;
+}
+
+/*Position paragraph next to copyright icon.*/
+footer p {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+  position: relative;
+  bottom: 370px;
+  right: 200px;
+}
