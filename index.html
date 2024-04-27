@@ -17,6 +17,7 @@
     <script src="https://kit.fontawesome.com/f81da0f324.js" crossorigin="anonymous"></script>
     <!--Link for Iconify-->
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!--<script src="scripts/welcome.js"></script>-->
 </head>
 <body>
     <header>
@@ -66,6 +67,12 @@
     <main>
         <!--unsure if put wrapper here so dark blue background on either side-->
         <div>
+            <!--Added script here to postion where user input displays on webpage. Exmample seen on https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_doc_write2-->
+            <script>
+             var userInput = prompt("Please enter your name.");
+             document.write("<h2>"+ "Welcome to my Site, " + userInput + "</h2>");
+            </script>
+            
             <section>
                 <h2 class="about">ABOUT ME</h2>
                 <!--image of me goes here-->
@@ -218,6 +225,7 @@
                     <ul class="volunteer">
                         <li>Secretary, Phi Theta Kappa,  BOO Chapter, Brightpoint Community College, Midlothian Campus, 2024</li>
                         <li>Volunteer at Library of Virginia transcribeathons</li>
+                        <li>Donate blood at American Red Cross</li>
                         <li>IT4Causes, volunteered on 2 web design and graphic design projects, 2021</li>
                         <li>Chesterfield Historical Society, Board of Directors member from 2020-2021</li>
                         <li>Daughters of American Revolution, Chesterfield Courthouse Chapter, member since May 2018</li>
@@ -227,85 +235,18 @@
                                 <li>Volunteer Service Committee Chair, 2018</li>
                             </ul>        
                     </ul>
-                
             </section>
         </div>
         <div>
-            <section>
-                <h2>WORK</h2><i class="fa-solid fa-angle-down"></i><!--Scroll indicator code goes here-->
-                <!--This is where Bootstrap code for cards goes.-->
-                <h3>Case Study 1</h3>
-                <!--bootstrap code for card 1 goes-->
-                /*Code for one card starts here.*/
-                <div class="card mb-3 first" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  /*Code for first card ends here.*/
-                  /*Code for one card starts here.*/
-                  <div class="card mb-3 first" style="max-width: 540px;">
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="..." class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    /*Code for first card ends here.*/
-                    /*Code for one card starts here.*/
-                    <div class="card mb-3 first" style="max-width: 540px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      /*Code for first card ends here.*/
-                <h3>Case Study 2</h3><!--Scroll indicator code goes here-->
-                <!--bootstrap code for card 2 goes-->
-                <h3>Case Study 3</h3>
-                <!--bootstrap code for card 3 goes-->
-                <h3>Illustrator Work</h3><!--Scroll indicator code goes here-->
-                <!--bootstrap code for card 4 goes-->
-                <h3>PhotoShop Work</h3>
-                <!--bootstrap code for card 5 goes-->
-                <h3>Animation Work</h3><!--Scroll indicator code goes here-->
-                <!--bootstrap code for card 6 goes-->
-            </section>
-        </div>
-        <div>
-            <h2>CONTACT ME</h2>
+            <h2 class="communicate">CONTACT ME</h2>
         </div>
         <div class="contact">
             <section>
                 <br/>
                 <p>I am currently open to work. I can be reached at<a href="mailto:drp27249@email.vccs.edu">drp27249@email.vccs.edu.</a></p>
-                <p>I can also be reached on my Linked In or Github accounts below.</p>
+                <p>I can also be reached on my social media accounts below.</p>
                 <p>My resume can be viewed here.</p>
-                <button type="button" class="resume">RESUME</button>
+                <button class="resume" type="submit" onclick="window.open('/images/ReneePenlandresume2023onepage.docx'); window.close()">RESUME</button>
             </section>
         </div>
         <div class="backtop">
@@ -313,32 +254,27 @@
                 <button class="top"><a href="#top">BACK TO TOP</a></button>
             </section>
         </div>
-        <div>
             <footer>
-                <!--icons to social media with links to profiles goes here-->
+                <!--icons to social media with links to profiles goes here.  Used position: fixed with location to make icons stay there.-->
                 <ul class="socialmediaicons">
-                  <!--Font Awesome code for Github-->
-                  <li><a href="https://github.com/DRPenland"><i class="fa-brands fa-github"></i></a></li>
-                  <!--Font Awesome code for LinkedIn-->
-                  <li><a href="https://www.linkedin.com/in/renee-penland/"><i class="fa-brands fa-linkedin"></i></a></li>
-                  <!--Font Awesome code for Medium-->
-                  <br/>
-                  <li><a href="https://medium.com/@drp27249"><i class="fa-brands fa-medium"></i></a></li>
-                  <!--Font Awesome Code for Behance-->
-                  <li><a href="https://www.behance.net/dawnpenland"><i class="fa-brands fa-square-behance"></i></a></li>
-                  <!--Iconify code for Dribbble icon-->
-                  <li><a href="https://dribbble.com/drp27249"><span class="logos--dribbble"></span></a></li>
-                  <!--Iconify code for codecademy icon-->
-                  <li><a href="https://www.codecademy.com/profiles/array5063548383"><span class="logos--codecademy"></span></a></li>
-                  <!--Iconify code for freecodecamp icon-->
-                  <li><a href="https://www.freecodecamp.org/fccddcbb5d0-1bf3-41e8-87e2-b81218ebb04f"><span class="simple-icons--freecodecamp"></span></a></li>
-                  <!--Font Awesome code for copyright icon-->
-                  <i class="fa-regular fa-copyright"></i><p>2024</p>
-                  <br/>
-              </ul>
-               
+                    <!--Font Awesome code for Github--> 
+                    <li><a href="https://github.com/DRPenland"><i class="fa-brands fa-github"></i></a></li>
+                    <!--Font Awesome code for LinkedIn-->
+                    <li><a href="https://www.linkedin.com/in/renee-penland/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <!--Font Awesome code for Medium-->
+                    <li><a href="https://medium.com/@drp27249"><i class="fa-brands fa-medium"></i></a></li>
+                    <!--Font Awesome Code for Behance-->
+                    <li><a href="https://www.behance.net/dawnpenland"><i class="fa-brands fa-square-behance"></i></a></li>
+                    <!--Iconify code for Dribbble icon-->
+                    <li><a href="https://dribbble.com/drp27249"><span class="logos--dribbble"></span></a></li>
+                    <!--Iconify code for codecademy icon-->
+                    <li><a href="https://www.codecademy.com/profiles/array5063548383"><span class="logos--codecademy"></span></a></li>
+                    <!--Iconify code for freecodecamp icon-->
+                    <li><a href="https://www.freecodecamp.org/fccddcbb5d0-1bf3-41e8-87e2-b81218ebb04f"><span class="simple-icons--freecodecamp"></span></a></li>
+                    <!--Font Awesome code for copyright icon-->
+                  <li><i class="fa-regular fa-copyright"></i></li><p>2024</p>
+                </ul>
             </footer>
-        </div>
     </main>
     <!--Script tag for JavaScript code from Bootstrap.-->
    <!-- Optional JavaScript; choose one of the two! -->
