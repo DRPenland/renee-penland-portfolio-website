@@ -34,29 +34,31 @@
             <!--This is where hamburger icon and unordered list for navigation goes-->
             <label for="hamburger-check">&#9776;</label>
             <input type="checkbox" id="hamburger-check" name="hamburger-check">
+            <!--Idea for href values to label sections on pages came from https://stackoverflow.com/questions/15481911/linking-to-a-specific-part-of-a-web-page#:~:text=Just%20append%20a%20%23%20followed%20by%20the%20ID,%3Ch2%3E%3Ca%20id%3D%22target%22%3ESome%20Header%3C%2Fa%3E%3C%2Fh2%3E%20%3Cp%3EThis%20is%20some%20more%20content.%3C%2Fp%3E-->
             <ul class="main-nav">
-                <li class="show-sub"><a href="#">ABOUT ME</a>
+                <li class="show-sub"><a href="index.html#bio">ABOUT ME</a>
                     <ul class="sub-nav">
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Certifications</a></li>
-                        <li><a href="#">Volunteer Work</a></li>
+                        <li><a href="index.html#abilities">Skills</a></li>
+                        <li><a href="index.html#schools">Education</a></li>
+                        <li><a href="index.html#cert">Certifications</a></li>
+                        <li><a href="index.html#vol">Volunteer Work</a></li>
                     </ul>
                 </li>
-                <li class="show-sub"><a href="#">WORK</a>
+                <li class="show-sub"><a href="page2.html#work">WORK</a>
                     <ul class="sub-nav">
-                        <li><a href="#">Case Study 1</a></li>
-                        <li><a href="#">Case Study 2</a></li>
-                        <li><a href="#">Case Study 3</a></li>
-                        <li><a href="#">Illustrator Work</a></li>
-                        <li><a href="#">PhotoShop Work</a></li>
-                        <li><a href="#">Animation Work</a></li>
+                        <li><a href="page2.html#cs1">Case Study 1</a></li>
+                        <li><a href="page2.html#cs2">Case Study 2</a></li>
+                        <li><a href="page2.html#cs3">Case Study 3</a></li>
+                        <li><a href="page2.html#illust">Illustrator Work</a></li>
+                        <li><a href="page2.html#ps">PhotoShop Work</a></li>
+                        <li><a href="page2.html#indsgn">In Design</a></li>
+                        <li><a href="page2.html#animate">Animation Work</a></li>
                     </ul>
                 </li>
-                <li class="show-sub"><a href="#">CONTACT ME</a>
+                <li class="show-sub"><a href="index.html#message">CONTACT ME</a>
                     <ul class="sub-nav">
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Social Media</a></li>
+                        <li><a href="index.html#res">Resume</a></li>
+                        <li><a href="index.html#icons">Social Media</a></li>
                     </ul>
                 </li>
             <!----Closing ul tag for main-nav-------------------------------------------->
@@ -66,9 +68,9 @@
     </header>
     <div>
         <section>
-            <h2>WORK</h2><i class="fa-solid fa-angle-down"></i><!--Scroll indicator code goes here-->
+            <h2 id="work">WORK</h2><i class="fa-solid fa-angle-down"></i><!--Scroll indicator code goes here-->
             <!--This is where Bootstrap code for cards goes.-->
-            <h3>Case Study 1</h3>
+            <h3 id="cs1">Case Study 1</h3>
             <!--bootstrap code for Case Study 1 goes here-->
             <!--Code for one card starts here.-->
             <div class="card mb-3 first" style="max-width: 540px;">
@@ -102,9 +104,11 @@
                   </div>
                 </div>
                 <!--Code for second card ends here.-->
-                <button class="btn2" type="submit" onclick="window.open('/images/case study 1/ingredientinventoryCaseStudySlideDeck-Google-UX-Design-Certificate.pptx'); window.close()">Presentation about Ingredient Inventory App</button>    
-                <p>Ingredient Inventory Case Study Slide Deck demonstrates my skills at planning a website and presenting it to a client.</p>
-                <h3>Case Study 2</h3><!--Scroll indicator code goes here-->
+                <div class="slide-deck1">
+                  <a href="images/case study 1/IngredientInventoryCaseStudySlideDeck-Google-UX-Design-Certificate.pptx" download="IngredientInventoryCaseStudySlideDeck-Google-UX-Design-Certificate.pptx">Ingredient Inventory App Case Study Slide Deck</a> 
+                  <p>Ingredient Inventory Case Study Slide Deck demonstrates my skills at planning a website and presenting it to a client.</p>
+              </div>
+                <h3 id="cs2">Case Study 2</h3><!--Scroll indicator code goes here-->
             <!--bootstrap code for Case Study 2 goes here-->
              <!--Code for first card starts here.-->
              <div class="card mb-3 second" style="max-width: 540px;">
@@ -170,7 +174,11 @@
                 </div>
               </div>
               <!--Code for fourth card ends here.-->
-            <h3>Case Study 3 - Team Project</h3>
+              <div class="slide-deck2">
+                <a href="images/Slide Decks/William Henry Clay and  Ellen Golden Watts  McFadden Family Website Plan Finalpresentation.pptx" download="William Henry Clay and  Ellen Golden Watts  McFadden Family Website Plan Finalpresentation.pptx">Presentation Slide Deck of Desktop Version of WHC & EGW McFadden Family Website</a> 
+                <p>WHC & EGW McFadden Family Website Presentation demonstrates my skills of planning and implementing a desktop website. This presentation contains all the planning steps such as target audience, user studies, personas taken to create a website.</p>
+            </div>
+            <h3 id="cs3">Case Study 3 - Team Project</h3>
             <!--bootstrap code for Case Study 3 goes here.-->
               <!--Code for first card starts here.-->
               <div class="card mb-3 first" style="max-width: 540px;">
@@ -220,7 +228,7 @@
                 </div>
               </div>
               <!--Code for third card ends here-->
-            <h3>Illustrator Work</h3><!--Scroll indicator code goes here-->
+            <h3 id="illust">Illustrator Work</h3><!--Scroll indicator code goes here-->
             <!--bootstrap code for Illustrator Section goes here.-->
               <!--Code for first card starts here.-->
               <div class="card mb-3 second" style="max-width: 540px;">
@@ -270,7 +278,7 @@
                 </div>
               </div>
               <!--Code for third card ends here-->
-            <h3>PhotoShop Work</h3>
+            <h3 id="ps">PhotoShop Work</h3>
             <!--bootstrap code for Photo Shop Section goes here-->
               <!--Code for first card starts here.-->
               <div class="card mb-3 first" style="max-width: 540px;">
@@ -320,7 +328,16 @@
                 </div>
               </div>
               <!--Code for third card ends here-->
-            <h3>Animation Work</h3><!--Scroll indicator code goes here-->
+              <div class="slide-deck3">
+                <a href="images/Slide Decks/Photoshop final project Renee Penland.docx" download="Photoshop final project Renee Penland.docx">Before and after images manipulated with Adobe PhotoShop.</a> 
+                <p>Presentation for ART180, Introduction to Computer Arts. Demonstrates my ability to take a photo and manipulate it to create a new scene using Adobe PhotoShop. Includes a write up of steps taken to create the new scene.</p>
+            </div>
+            <h3 id="indsgn">In Design</h3>
+            <div class="slide-deck4">
+              <a href="images/Slide Decks/ART180FinalProject.pdf" download="images/Slide Decks/ART180FinalProject.pdf">In Design Art180 Final Project</a> 
+              <p>Final presentation for ART180 PhotoShop classes. Demonstrates my ability to use In Design to make a booklet.  The magazine contains class assignments created in Adobe PhotoShop, Illustrator and In Design for ART180, Introduction to Computer Arts.</p>
+          </div>
+            <h3 id="animate">Animation Work</h3><!--Scroll indicator code goes here-->
             <!--bootstrap code for Animation Section goes here.-->
               <!--Code for first card starts here.-->
               <div class="card mb-3 second" style="max-width: 540px;">

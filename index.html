@@ -35,28 +35,29 @@
             <label for="hamburger-check">&#9776;</label>
             <input type="checkbox" id="hamburger-check" name="hamburger-check">
             <ul class="main-nav">
-                <li class="show-sub"><a href="#">ABOUT ME</a>
+                <li class="show-sub"><a href="index.html#bio">ABOUT ME</a>
                     <ul class="sub-nav">
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Certifications</a></li>
-                        <li><a href="#">Volunteer Work</a></li>
+                        <li><a href="index.html#abilities">Skills</a></li>
+                        <li><a href="index.html#schools">Education</a></li>
+                        <li><a href="index.html#cert">Certifications</a></li>
+                        <li><a href="index.html#vol">Volunteer Work</a></li>
                     </ul>
                 </li>
                 <li class="show-sub"><a href="#">WORK</a>
                     <ul class="sub-nav">
-                        <li><a href="#">Case Study 1</a></li>
-                        <li><a href="#">Case Study 2</a></li>
-                        <li><a href="#">Case Study 3</a></li>
-                        <li><a href="#">Illustrator Work</a></li>
-                        <li><a href="#">PhotoShop Work</a></li>
-                        <li><a href="#">Animation Work</a></li>
+                        <li><a href="page2.html#cs1">Case Study 1</a></li>
+                        <li><a href="page2.html#cs2">Case Study 2</a></li>
+                        <li><a href="page2.html#cs3">Case Study 3</a></li>
+                        <li><a href="page2.html#illust">Illustrator Work</a></li>
+                        <li><a href="page2.html#ps">PhotoShop Work</a></li>
+                        <li><a href="page2.html#indsgn">In Design</a></li>
+                        <li><a href="page2.html#animate">Animation Work</a></li>
                     </ul>
                 </li>
-                <li class="show-sub"><a href="#">CONTACT ME</a>
+                <li class="show-sub"><a href="index.html#message">CONTACT ME</a>
                     <ul class="sub-nav">
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Social Media</a></li>
+                        <li><a href="index.html#res">Resume</a></li>
+                        <li><a href="index.html#icons">Social Media</a></li>
                     </ul>
                 </li>
             <!----Closing ul tag for main-nav-------------------------------------------->
@@ -74,7 +75,7 @@
             </script>
             
             <section>
-                <h2 class="about">ABOUT ME</h2>
+                <h2 id="bio"class="about">ABOUT ME</h2>
                 <!--image of me goes here-->
                 <div class="oval"><span><img src="images/ReneePenlandLinkedInpic.png" alt="Renee Penland" width="200" height="250"></span>
                 </div>
@@ -95,10 +96,10 @@
                     <br/><br/>
                     Renee's greatest strengths are listening, empathizing, and writing.  She is passionate about accomplishing goals and meeting deadlines.
                 </p>
-                <h2 class="skills">SKILLS</h2>
+                <h2 id="abilities" class="skills">SKILLS</h2>
                 <p>Figma, Adobe PhotoShop, Adobe Illustrator, Adobe InDesign, Adobe Animate, HTML5, CSS3, Responsiveness</p>
                 <h2 class="edu">EDUCATION</h2>
-                    <ul class="education">
+                    <ul id="schools" class="education">
                         <li>Brightpoint Community College, Midlothian, VA, AAS Web Design 2024 GPA 3.91</li>
                         <li>Coursera Google UX Design Certificate, 2024</li>
                         <li>School of Information and Library Science, University of North Carolina at Chapel Hill, NC
@@ -106,7 +107,7 @@
                         <li>Randolph-Macon College, Ashland, VA  B.A. History with Honors, 1990 GPA 3.65 Class Rank 14/208</li>
                         <li>Meadowbrook High School, Chesterfield, VA Disploma, 1986</li>
                     </ul>
-                <h2>CERTIFICATIONS</h2><<i class="fa-solid fa-angle-down"></i>!--Scroll indicator code goes here-->
+                <h2 id="cert">CERTIFICATIONS</h2><<i class="fa-solid fa-angle-down"></i>!--Scroll indicator code goes here-->
             </secti
         </div>
         <!--This is where Bootstrap code for carousel goes for certificates-->
@@ -221,7 +222,7 @@
 
         <div>
             <section>
-                <h2>VOLUNTEER WORK</h2>
+                <h2 id="vol">VOLUNTEER WORK</h2>
                     <ul class="volunteer">
                         <li>Secretary, Phi Theta Kappa,  BOO Chapter, Brightpoint Community College, Midlothian Campus, 2024</li>
                         <li>Volunteer at Library of Virginia transcribeathons</li>
@@ -238,7 +239,7 @@
             </section>
         </div>
         <div>
-            <h2 class="communicate">CONTACT ME</h2>
+            <h2 id="message" class="communicate">CONTACT ME</h2>
         </div>
         <div class="contact">
             <section>
@@ -246,8 +247,11 @@
                 <p>I am currently open to work. I can be reached at<a href="mailto:drp27249@email.vccs.edu">drp27249@email.vccs.edu.</a></p>
                 <p>I can also be reached on my social media accounts below.</p>
                 <p>My resume can be viewed here.</p>
-                <button class="resume" type="submit" onclick="window.open('/images/ReneePenlandresume2023onepage.docx'); window.close()">RESUME</button>
-            </section>
+                <!--<button class="resume" type="submit" onclick="window.open('/images/ReneePenlandresume2023onepage.docx'); window.close()">RESUME</button>-->
+                <div id="res" class="resume">
+                  <a href="images/ReneePenlandresume2023onepage.docx" download="ReneePenlandresume2023onepage.docx">Renee Penland's Resume</a> 
+                </div>
+              </section>
         </div>
         <div class="backtop">
             <section>
@@ -256,7 +260,7 @@
         </div>
             <footer>
                 <!--icons to social media with links to profiles goes here.  Used position: fixed with location to make icons stay there.-->
-                <ul class="socialmediaicons">
+                <ul id="icons" class="socialmediaicons">
                     <!--Font Awesome code for Github--> 
                     <li><a href="https://github.com/DRPenland"><i class="fa-brands fa-github"></i></a></li>
                     <!--Font Awesome code for LinkedIn-->
